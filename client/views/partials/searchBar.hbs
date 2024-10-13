@@ -1,0 +1,32 @@
+<head>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="public/css/output.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Search Form -->
+    <form action="#" method="get" class="flex justify-center mt-8">
+        <!-- Search Input Container -->
+        <div class="relative w-full max-w-md">
+            <!-- Search Input Field -->
+            <input 
+                type="search" 
+                name="search" 
+                placeholder="Search for products..."
+                class="w-full border border-gray-300 py-5 pl-10 pr-16 shadow-lg rounded-full 
+                       focus:outline-none focus:ring-2 focus:ring-red-500 bg-white text-gray-800
+                       transition duration-300 ease-in-out"
+            >
+            <!-- Submit Button Inside Input Field -->
+            <button 
+                type="submit" 
+                class="absolute inset-y-0 right-0 flex items-center px-4 m-2 bg-red-600 text-white rounded-full 
+                       hover:bg-red-700 transition duration-300 ease-in-out">
+                <i class="fas fa-search text-lg"></i>
+            </button>
+        </div>
+    </form>
+</body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="flex flex-col min-h-screen">
+  
+  <!-- Header Partial -->
+  {{> header }}
+
+  <!-- Main Content: flex-grow makes sure it fills the available space -->
+  <main class="flex-grow flex flex-col items-center justify-center">
+    <h1 class="text-4xl md:text-5xl font-semibold text-gray-800 mb-6">Welcome to Lubbenta Auction</h1>
+    <p class="text-lg text-gray-600 mb-8 max-w-xl text-center">Bid on exclusive items and enjoy great deals! Discover a world of unique treasures waiting for you.</p>
+    
+    <a href="/auctions">
+      View Auctions
+    </a>
+  </main>
+
+  <!-- Footer Partial (sticks to the bottom of the page) -->
+  {{> footer }}
+</body>
+</html>
